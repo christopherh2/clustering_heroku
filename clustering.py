@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from pycaret.clustering import *
+from pycaret.clustering import load_model, predict_model
 
 # Loading the model
 model= load_model('IrisKmeans')
@@ -21,7 +21,7 @@ def run():
     ("Online", "Batch"))
     
     # Add an image
-    st.sidebar.image('iris.jpg')
+    # st.sidebar.image('iris.jpg')
     
     # Single predictions
     if add_selectbox == 'Online':
