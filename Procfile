@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run clustering.py
+web: sh setup.sh && streamlit run clustering
