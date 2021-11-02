@@ -21,7 +21,7 @@ def run():
     ("Online", "Batch"))
     
     # Add an image
-    # st.sidebar.image('iris.jpg')
+    st.sidebar.image('iris.jpg')
     
     # Single predictions
     if add_selectbox == 'Online':
