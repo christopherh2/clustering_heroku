@@ -22,6 +22,7 @@ def run():
     
     # Add an image
     st.sidebar.image('iris.jpg')
+    st.text("This tool is strictly for educational purposes and should not be used in any other way.")
     
     # Single predictions
     if add_selectbox == 'Online':
