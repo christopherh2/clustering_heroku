@@ -22,7 +22,7 @@ def run():
     
     # Add an image
     st.sidebar.image('iris.jpg')
-    st.text("This tool is strictly for educational purposes and should not be used in any other way.")
+    st.sidebar.text("This tool is strictly for educational purposes and should not be used in any other way.")
     
     # Single predictions
     if add_selectbox == 'Online':
@@ -30,7 +30,7 @@ def run():
         # Numeric input 
         features =['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm','Species']
         
-        st.text("Enter flower's information")
+        st.info("Enter flower's information")
         sepalL = st.number_input('Sepal length (cm)', min_value=4.0, max_value=8.0,value=4.0)
         sepalW = st.number_input('Sepal length (cm)', min_value=2.0, max_value=8.0,value=2.0)
         petalL = st.number_input('Petal length (cm)', min_value=1.0, max_value=7.0,value=1.0)
