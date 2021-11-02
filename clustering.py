@@ -51,7 +51,7 @@ def run():
         if st.button("Predict"):
             prediction = predict_model(model=model,data=input_df)
             cluster = prediction.Cluster[0]
-            st.success('This flower belongs to {}'.format(cluster))
+            st.success('This {} flower belongs to {}'.format(inptu_df.Species[0], cluster))
             st.success(description[cluster])
         
         
