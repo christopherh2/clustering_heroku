@@ -58,6 +58,7 @@ def run():
         
         # File upload
     if add_selectbox == 'Batch':
+        st.info('Data must contain the cleaned string, 4 topic coherence columns, and dominant topic.')
 
         file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
         # Perform predictions if there is a file
